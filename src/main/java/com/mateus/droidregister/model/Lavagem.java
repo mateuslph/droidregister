@@ -13,12 +13,21 @@ import java.time.LocalTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class logs {
+public class Lavagem {
+
+     public Lavagem(String data, String hora) {
+          this.data = data;
+          this.hora = hora;
+     }
 
      @Id
      @GeneratedValue(strategy = GenerationType.UUID)
      private String id;
-     private LocalDate date;
-     private LocalTime hour;
+
+     @Column(name = "data")
+     private String data;
+
+     @Column(name = "hora")
+     private String hora;
 
 }
