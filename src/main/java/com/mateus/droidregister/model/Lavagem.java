@@ -6,8 +6,8 @@ import lombok.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-@Table(name="products")
-@Entity(name="products")
+@Table(name="log")
+@Entity(name="log")
 @Getter
 @Setter
 @AllArgsConstructor
